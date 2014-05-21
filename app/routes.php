@@ -13,11 +13,13 @@
 
 // TODO: Organize and migrate all resources
 
+/* Index Route - Main Page Routing */
 Route::get('/', function()
 {
 	return View::make('index');
 });
 
+/* Account Setup Route */
 Route::get('setup', function()
 {
 	return View::make('setup');
@@ -26,6 +28,12 @@ Route::get('setup', function()
 Route::get('login', function()
 {
 	return View::make('login');
+});
+
+/* Portal Pages */
+Route::get('dashboard', function()
+{
+	return View::make('dashboard');
 });
 
 /* Testing of Database Transactions */
