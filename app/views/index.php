@@ -31,7 +31,8 @@
 					<h1>Interactive Alzheimer's Smartwatch <sup style="font-size: 0.4em; font-style: italic;">βeta</sup></h1>
 					<p>A smartwatch to empower Alzheimer's patients and give caretakers a peace of mind.</p>
 					
-					<p style="font-size: 1em"><i>Developed by the <a href="http://thsinventeam.com/">Tenafly High School InvenTeam</a></i></p>
+					<p style="font-size: 1em"><i>Developed by the <a href="http://www.thsinventeam.com/">Tenafly High School InvenTeam</a></i></p>
+
 				</header>
 			</section>
 			
