@@ -41,8 +41,7 @@
 				<header>
 					<div class="container">
 						<h2>A "Smart" Device to Aid Alzheimer's Patients</h2>
-						<p>Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor sit amet consequat<br />
-						feugiat. Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor sit amet.</p>
+						<p>A Smartwatch and Docking Station System to help restore independence to patients with early-onset Alzheimer’s Disease, <br/> enabling direct communications to caretakers for help in case of emergency - especially during episodes of disorientation. </p>
 					</div>
 				</header>
 				<div class="content dark style1 featured">
@@ -54,10 +53,7 @@
 									<header>
 										<h3>Real-Time Tracking</h3>
 									</header>
-									<p>Gravida dis placerat lectus ante vel nunc euismod est turpis sodales. 
-									Diam tempor dui lacinia accumsan vivamus. Gravida dis placerat lectus 
-									ante vel nunc euismod est turpis sodales. Diam tempor dui lacinia 
-									accumsan vivamus.</p>
+									<p>Equipped with an accurate GPS system, caretakers can quickly and easily keep an eye on the patients and know where they are at anytime in real-time.</p>
 								</section>
 							</div>
 							<div class="4u">
@@ -66,10 +62,7 @@
 									<header>
 										<h3>Instant Alerts</h3>
 									</header>
-									<p>Gravida dis placerat lectus ante vel nunc euismod est turpis sodales. 
-									Diam tempor dui lacinia accumsan vivamus. Gravida dis placerat lectus 
-									ante vel nunc euismod est turpis sodales. Diam tempor dui lacinia 
-									accumsan vivamus.</p>
+									<p>The system relays the patient’s location in real time over a cellular GSM network to the caretaker(s) through three different mediums: SMS text, email and the web application platform (compatible for mobile and desktop).</p>
 								</section>
 							</div>
 							<div class="4u">
@@ -78,10 +71,7 @@
 									<header>
 										<h3>'Smart' Tracking Algorithm</h3>
 									</header>
-									<p>Gravida dis placerat lectus ante vel nunc euismod est turpis sodales. 
-									Diam tempor dui lacinia accumsan vivamus. Gravida dis placerat lectus 
-									ante vel nunc euismod est turpis sodales. Diam tempor dui lacinia 
-									accumsan vivamus.</p>
+									<p>Specialized algorithms used during GPS tracking of patients enable an accurate detection of wandering patterns, enabling quick and prompt alerts and notifications to the caretakers even before danger strikes.</p>
 								</section>
 							</div>
 						</div>
