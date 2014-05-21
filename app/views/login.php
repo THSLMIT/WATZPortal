@@ -1,3 +1,5 @@
+<?php $alert = Input::get('err'); ?>
+
 <!DOCTYPE html>
 <html>
 
@@ -27,6 +29,7 @@
                             <h3 class="panel-title">Please Sign In</h3>
                         </div>
                         <div class="panel-body">
+                        	<?php if ($alert == 1) echo "<div class='alert alert-danger'>Incorrect credentials, please try again.</div>"; ?>
                             <form role="form">
                                 <fieldset>
                                     <div class="form-group">
