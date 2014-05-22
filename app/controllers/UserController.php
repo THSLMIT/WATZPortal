@@ -17,18 +17,20 @@ class UserController extends BaseController{
    		    )
 		);
 
+
 			if($validator->fails()){
 				return Redirect::to('login?err=1');
 			}else{
-				$query = DB::select("SELECT * FROM  `useracct` WHERE email = '$email' AND password = '$password'");
 
-				if(count($query[0]) != 0){
-					Session::put('email', $email);
-					return Redirect::to('dashboard');
-				}else{
-					return Redirect::to('login?err=1');
+				$query = DB::select("SELECT * FROM  `useracct` WHERE email = '$email' AND password = '$password'");
+				if($query){
+					if(count($query[0]) != 0){
+						Session::put('email', $email);
+						return Redirect::to('dashboard');
+					}else{
+						return Redirect::to('login?err=1');
+					}
 				}
-				
 			}
 	}
 
