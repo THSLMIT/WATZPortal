@@ -54,10 +54,10 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => 'watzdb.thslmit.com',
-			'database'  => 'omega_db',
-			'username'  => 'watzdev',
-			'password'  => 'tenaflytigers',
+			'host'      => 'sql3.freesqldatabase.com:3306',
+			'database'  => 'sql340983',
+			'username'  => 'sql340983',
+			'password'  => 'sH9%mW8!',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

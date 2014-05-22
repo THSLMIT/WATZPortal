@@ -4,19 +4,19 @@
 <html>
 
 <head>
-	<title>Login</title>
-	
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<meta name="description" content="Mint by Grozav is a flat design approach towards Admin Dashboards. Intuitive, cutting-edge, clean and easy to use and customize, as every Application UI should be. ">
-	<link rel="author" href="http://grozav.com/"/>
+    <title>Login</title>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="Mint by Grozav is a flat design approach towards Admin Dashboards. Intuitive, cutting-edge, clean and easy to use and customize, as every Application UI should be. ">
+    <link rel="author" href="http://grozav.com/"/>
 
-	<!-- Core CSS - Include with every page -->
-	<link href="css/bootstrap.css" rel="stylesheet">
-	<link href="../../netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Core CSS - Include with every page -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="../../netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
 
-	<!-- Mint Admin CSS - Include with every page -->
-	<link href="css/mint-admin.css" rel="stylesheet">
+    <!-- Mint Admin CSS - Include with every page -->
+    <link href="css/mint-admin.css" rel="stylesheet">
 </head>
 
     <body>
@@ -29,8 +29,8 @@
                             <h3 class="panel-title">Please Sign In</h3>
                         </div>
                         <div class="panel-body">
-                        	<?php if ($alert == 1) echo "<div class='alert alert-danger'>Incorrect credentials, please try again.</div>"; ?>
-                            <form role="form">
+                            <?php if ($alert == 1) echo "<div class='alert alert-danger'>Incorrect credentials, please try again.</div>"; ?>
+                            <form role="form" method = "POST" action = "loginAttempt">
                                 <fieldset>
                                     <div class="form-group">
                                         <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus>
@@ -44,7 +44,7 @@
                                         </label>
                                     </div>
                                     <!-- Change this to a button or input when using this as a form -->
-                                    <a href="" class="btn btn-lg btn-primary btn-block">Login</a>
+                                    <input type = "submit" name = "submit" class="btn btn-lg btn-primary btn-block" placeholder = "Login">
                                 </fieldset>
                             </form>
                         </div>

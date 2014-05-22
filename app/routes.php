@@ -41,3 +41,9 @@ Route::get('test', array(
 	'as' => 'test',
 	'uses' => 'HomeController@test'
 ));
+
+
+Route::post('loginAttempt', array(
+	'as' => 'loginAttempt',
+	'uses' => 'UserController@loginAttempt'
+));
