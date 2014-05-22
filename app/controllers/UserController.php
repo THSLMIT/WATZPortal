@@ -30,6 +30,8 @@ class UserController extends BaseController{
 					}else{
 						return Redirect::to('login?err=1');
 					}
+				}else{
+					return Redirect::to('login?err=1');
 				}
 			}
 	}
