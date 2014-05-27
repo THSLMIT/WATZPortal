@@ -22,7 +22,7 @@ class UserController extends BaseController{
 				return Redirect::to('login?err=1');
 			}else{
 
-				$query = DB::select("SELECT * FROM  `useracct` WHERE email = '$email' AND password = '$password'");
+				$query = DB::select("SELECT * FROM  `UserAccount` WHERE email = '$email' AND password = '$password'");
 				if($query){
 					if(count($query[0]) != 0){
 						Session::put('email', $email);
