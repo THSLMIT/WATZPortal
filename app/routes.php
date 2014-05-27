@@ -47,3 +47,7 @@ Route::post('loginAttempt', array(
 	'as' => 'loginAttempt',
 	'uses' => 'UserController@loginAttempt'
 ));
+
+Route::get('content', function(){
+	return View::make('layouts/content');
+});
