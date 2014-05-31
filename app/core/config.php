@@ -21,7 +21,7 @@ define('PREFIX','smvc_');
 define('SESSION_PREFIX','smvc_');
 
 //optionall create a constant for the name of the site
-define('SITETITLE','Simple MVC Framework v2');
+define('SITETITLE','WATZ Web Portal');
 
 //set the default template
 Session::set('template','default');

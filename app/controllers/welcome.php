@@ -15,4 +15,7 @@ class Welcome extends Controller{
 		$this->view->rendertemplate('footer',$data);
 	}
 
+	public function hello() {
+		echo "Helo World!";
+	}
 }

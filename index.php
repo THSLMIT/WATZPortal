@@ -1,8 +1,10 @@
 <?php
 require('app/core/autoloader.php');
 
-//define routes
+/* Routes */
 Router::get('/', 'welcome@index');
+
+Router::get('/login', 'account@login');
 
 //if no route found
 Router::error('error@index');
