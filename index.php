@@ -2,9 +2,14 @@
 require('app/core/autoloader.php');
 
 /* Routes */
-Router::get('/', 'welcome@index');
 
+// Portal Routes
+Router::get('/', 'portal@index');
+
+// Account Routes
 Router::get('/login', 'account@login');
+Router::get('/setup', 'account@setup');
+
 
 //if no route found
 Router::error('error@index');

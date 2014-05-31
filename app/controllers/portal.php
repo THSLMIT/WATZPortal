@@ -1,9 +1,13 @@
 <?php
 
-class Account extends Controller{
+class Portal extends Controller {
 
 	public function __construct(){
 		parent::__construct();
+
+		$this->view->rendertemplate('header', $data);
+		$this->view->rendertemplate('headerBar', $data);
+		$this->view->rendertemplate('sideBar', $data);
 	}
 
 	public function index($request = null) {
@@ -17,10 +21,4 @@ class Account extends Controller{
 		$this->view->rendertemplate('soloFooter',$data);
 	}
 
-	public function setup() {
-		$data['title'] = 'Setup Account';
-
-		$this->view->rendertemplate('soloHeader',$data);
-		
-	}
 }

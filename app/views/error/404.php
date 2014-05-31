@@ -1,14 +1,21 @@
-<h1>404</h1>
+<div class="container">
+	<div class="row">
+    <div class="col-md-4 col-md-offset-4">
+    
+    <div class="login-panel panel panel-default">
+    	<div class='panel-heading text-center'>
+        	<h1 class='large-error'>404</h1>
+            <h4>Oops, something went wrong!</h4>
+		</div>
+        
+        <div class="panel-body text-center">
 
-<?php echo $data['error'];?>
-
-<hr />
-
-<h3>The page you were looking for could not be found</h3>
-<p>This could be the result of the page being removed, the name being changed or the page being temporarily unavailable</p>
-<h3>Troubleshooting</h3>
-
-<ul>
-  <li>If you spelled the URL manually, double check the spelling</li>
-  <li>Go to our website's home page, and navigate to the content in question</li>
-</ul>
+			<h3>Error Details:</h3>
+			<p><?php echo $data['error'];?></p>
+			
+		</div>
+	</div>
+    
+    </div>
+    </div>
+</div>

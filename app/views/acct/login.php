@@ -8,7 +8,7 @@
             <h3 class="panel-title">Please Sign In</h3>
         </div>
         
-        <div class="panel-body">
+        <div class="panel-body text-center">
             <form role="form" />
             <fieldset>
                 <div class="form-group">
@@ -23,6 +23,10 @@
                 <a href="" class="btn btn-lg btn-primary btn-block">Login</a>
             </fieldset>
             </form>
+
+            <br />
+
+            <p><a href="">Forgot</a> or <a href="">Setup a New Account</a></p>
         </div>
 
     </div>
