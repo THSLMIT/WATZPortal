@@ -55,6 +55,7 @@ class Account extends Controller{
 			// Load Model
 			$acct = $this->loadModel("sysacct_model");
 			$device = $this->loadModel("device_model");
+			$mail = $this->loadHelper("phpmailer/mail");
 
 			// Error ID (0 for none)
 			$error = 0;
@@ -96,7 +97,10 @@ class Account extends Controller{
 							$device->linkAcctToDev($linkID);
 
 							// Send Confirmation Email
-							
+							$mail->addAddress($email, $first_name." ".$last_name);
+							$mail->Subject = "WATZ Account Created";
+							$mail->Body = "Hello ".$first_name.", <br /><br /> Your new account has been created and is now ready to be used together with your Smartwatch and Docking Station. Be sure to update your information in the portal settings. <br /> From, <br />The Tenafly Lemelson-MIT InvenTeam";
+							$mail->send();	
 						}
 					}
 				}
