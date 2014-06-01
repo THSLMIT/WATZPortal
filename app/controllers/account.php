@@ -67,26 +67,44 @@ class Account extends Controller{
 			$pass_confirm = $_POST['pass_confirm'];
 			$linkID = $_POST['linkID'];
 
-			if ($first_name != "" || $last_name != "" || $email != "" || $pass != "" || $pass_confirm != "" || $linkID != "") {
-				// Check if Account Exist
+			// Step 1: Check for Blanks
+			if ($first_name == "" || $last_name == "" || $email == "" || $pass == "" || $pass_confirm == "" || $linkID == "") $error = 1;
+			else {
+				// Step 2: Check for duplicate account
 				if ($acct->accountExist($email)) $error = 2;
 				else {
-					// Check Password Confirmation
+					// Step 3: Check for password match
 					if ($pass != $pass_confirm) $error = 3;
 					else {
-						// Check if link ID is valid.
-						if(!$device->linkIDCheck($linkID)) $error = 4;
+						// Step 4: Check Link ID Existance & Free
+						if (!$device->linkIDCheck($linkID) || !$device->isLinkFree($linkID)) $error = 4;
 						else {
+							$sysuser_data = array(
+								'uid' => $linkID,
+								'email' => $email,
+								'password' => Password::make($pass)
+							);
 
+							$userinfo_data = array(
+								'uid' => $linkID,
+								'first_name' => $first_name,
+								'last_name' => $last_name,
+								'email' => $email
+							);
+
+							$acct->createAccount($sysuser_data, $userinfo_data);
+							$device->linkAcctToDev($linkID);
+
+							// Send Confirmation Email
+							
 						}
 					}
 				}
-			} else $error = 1;
+			}
 
 			switch ($error) {
 				case 0:
-					echo "OKAY!";
-					// redirect to next stage
+
 					break;
 
 				case 1:
@@ -104,7 +122,6 @@ class Account extends Controller{
 				case 4:
 					$data['error'] = "<div class='alert alert-warning'>Invalid Link ID.</div>";
 					break;
-
 			}
 		}
 

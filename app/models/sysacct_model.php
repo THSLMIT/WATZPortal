@@ -18,5 +18,8 @@ class SysAcct_model extends Model {
 		return false;
 	}
 
-
+	public function createAccount($sysacct, $userinfo) {
+		$this->_db->insert('sysuser', $sysacct);
+		$this->_db->insert('userinfo', $userinfo);
+	}
 }
