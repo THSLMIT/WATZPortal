@@ -11,8 +11,11 @@ class SysAcct_model extends Model {
 		return $data[0]->password;
 	}
 
-	public function getUsers() {
-		return $this->_db->select('SELECT * FROM users');
+	public function accountExist($email) {
+		$data = $this->_db->select('SELECT password FROM sysuser WHERE email = :email', array(':email' => $email));
+		if (count($data) == 1) return true;
+
+		return false;
 	}
 
 
