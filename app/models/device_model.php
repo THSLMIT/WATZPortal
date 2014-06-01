@@ -32,4 +32,9 @@ class Device_model extends Model {
 		$this->_db->insert('acct_devLink', $data);
 	}
 
+	public function unlinkAcctDev($uid) {
+		$data = array('uid' => $uid);
+		$this->_db->delete('acct_devLink', $data);
+	}
+
 }

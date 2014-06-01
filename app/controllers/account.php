@@ -97,10 +97,11 @@ class Account extends Controller{
 							$device->linkAcctToDev($linkID);
 
 							// Send Confirmation Email
+							$mail->setFrom('info@thslmit.com','Tenafly InvenTeam');
 							$mail->addAddress($email, $first_name." ".$last_name);
-							$mail->Subject = "WATZ Account Created";
-							$mail->Body = "Hello ".$first_name.", <br /><br /> Your new account has been created and is now ready to be used together with your Smartwatch and Docking Station. Be sure to update your information in the portal settings. <br /> From, <br />The Tenafly Lemelson-MIT InvenTeam";
-							$mail->send();	
+							$mail->Subject = "Welcome to WATZ";
+							$mail->Body = "Hello ".$first_name.", <br /><br /> Your new web portal account has been successfully created and is now ready to be used together with your smartwatch and docking station system.<br/>Be sure to update the patient settings as well as the notification settings in the Settings pages of the portal. <br /><br /> From, <br />The Tenafly Lemelson-MIT InvenTeam <br /><img src='http://thslmit.com/app/templates/default/img/lmit_logo.png' width='500px'>";
+							$mail->send();
 						}
 					}
 				}
