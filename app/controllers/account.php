@@ -139,6 +139,6 @@ class Account extends Controller{
 	public function createAcctSuccess() {
 		$this->view->rendertemplate('soloHeader', $data);
 		$this->view->render('acct/createAcctSuccess', $data);
-		$this->view->rendertemplate('solorFooter', $data);
+		$this->view->rendertemplate('soloFooter', $data);
 	}
 }
