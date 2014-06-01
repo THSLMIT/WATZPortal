@@ -74,7 +74,11 @@ class Account extends Controller{
 					// Check Password Confirmation
 					if ($pass != $pass_confirm) $error = 3;
 					else {
-						
+						// Check if link ID is valid.
+						if(!$device->linkIDCheck($linkID)) $error = 4;
+						else {
+
+						}
 					}
 				}
 			} else $error = 1;
@@ -95,6 +99,10 @@ class Account extends Controller{
 
 				case 3:
 					$data['error'] = "<div class='alert alert-warning'>Passwords do not match.</div>";
+					break;
+
+				case 4:
+					$data['error'] = "<div class='alert alert-warning'>Invalid Link ID.</div>";
 					break;
 
 			}

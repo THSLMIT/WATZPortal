@@ -15,15 +15,15 @@ TODO:
                 <fieldset>
                     <p>Caretaker Information</p>
                     <div class="form-group"><input class="form-control" placeholder="First Name" name="first_name" type="text" autofocus="" /></div>
-                    <div class="form-group"><input class="form-control" placeholder="Last Name" name="last_name" type="text" value="" /></div>
+                    <div class="form-group"><input class="form-control" placeholder="Last Name" name="last_name" type="text" /></div>
 
                     <p>Account Information</p>
                     <div class="form-group"><input class="form-control" placeholder="Email (Username)" name="email" type="email" autofocus="" /></div>
-                    <div class="form-group"><input class="form-control" placeholder="Password" name="pass" type="password" value="" /></div>
-                    <div class="form-group"><input class="form-control" placeholder="Password Confirm" name="pass_confirm" type="password" value="" /></div>
+                    <div class="form-group"><input class="form-control" placeholder="Password" name="pass" type="password"  /></div>
+                    <div class="form-group"><input class="form-control" placeholder="Password Confirm" name="pass_confirm" type="password" /></div>
 
                     <p>Device Link (?)</p> <!-- Help Info here! -->
-                    <div class="form-group"><input class="form-control" placeholder="Link ID" name="linkID" type="text" value="" /></div>
+                    <div class="form-group"><input class="form-control" placeholder="Link ID" name="linkID" type="text" /></div>
 
                     <input class="btn btn-lg btn-primary btn-block" name="submit" type="submit" value="Login" />
                 </fieldset>
