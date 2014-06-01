@@ -15,7 +15,9 @@ Router::get('setup', 'account@setup');
 Router::get('createAcct', 'account@createForm');
 Router::post('createAcct', 'account@createForm');
 
+Router:: get('acctSucc', 'account@createAcctSuccess');
 
+// 
 Router::get('test'. function() {
 });
 

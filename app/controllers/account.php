@@ -109,7 +109,7 @@ class Account extends Controller{
 
 			switch ($error) {
 				case 0:
-
+					Url::redirect('acctSucc');
 					break;
 
 				case 1:
@@ -134,5 +134,11 @@ class Account extends Controller{
 
 		$this->view->rendertemplate('soloHeader',$data);
 		$this->view->render('acct/createAccount',$data);
+	}
+
+	public function createAcctSuccess() {
+		$this->view->rendertemplate('soloHeader', $data);
+		$this->view->render('acct/createAcctSuccess', $data);
+		$this->view->rendertemplate('solorFooter', $data);
 	}
 }

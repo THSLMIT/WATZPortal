@@ -22,4 +22,9 @@ class SysAcct_model extends Model {
 		$this->_db->insert('sysuser', $sysacct);
 		$this->_db->insert('userinfo', $userinfo);
 	}
+
+	public function deleteAccount($uid) {
+		$data = array('uid' => $uid);
+		
+	}
 }
