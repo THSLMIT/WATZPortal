@@ -9,7 +9,7 @@ Router::get('/', 'portal@index');
 // Account Routes
 Router::get('/login', 'account@login');
 Router::get('/setup', 'account@setup');
-
+Router::get('/createAcct', 'account@createForm');
 
 //if no route found
 Router::error('error@index');

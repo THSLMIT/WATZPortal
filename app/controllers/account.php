@@ -21,6 +21,14 @@ class Account extends Controller{
 		$data['title'] = 'Setup Account';
 
 		$this->view->rendertemplate('soloHeader',$data);
-		
+		$this->view->render('acct/signupInstr',$data);
+		$this->view->rendertemplate('soloFooter',$data);
+	}
+
+	public function createForm() {
+		$data['title'] = 'Setup Account';
+
+		$this->view->rendertemplate('soloHeader',$data);
+		$this->view->render('acct/createAccount',$data);
 	}
 }
