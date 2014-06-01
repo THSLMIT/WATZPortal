@@ -10,6 +10,10 @@ class Account extends Controller{
 	}
 
 	public function login() {
+		if(isset($_POST['submit'])){
+			echo "SUBMIT!";
+		}
+
 		$data['title'] = 'Sign In';
 
 		$this->view->rendertemplate('soloHeader',$data);

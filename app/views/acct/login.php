@@ -9,7 +9,7 @@
         </div>
         
         <div class="panel-body text-center">
-            <form role="form" />
+            <form id="login" role="form" action="http://www.thslmit.com/portal/login" method="post" />
             <fieldset>
                 <div class="form-group">
                     <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus="" />
@@ -20,7 +20,8 @@
                 </div>
                 
                 <!-- Change this to a button or input when using this as a form -->
-                <a href="" class="btn btn-lg btn-primary btn-block">Login</a>
+                <input class="btn btn-lg btn-primary btn-block" type="submit" value="Login" />
+<!--                <a href="" onclick="javascript: document.getElementById('login').submit()" name="submit" class="btn btn-lg btn-primary btn-block">Login</a>-->
             </fieldset>
             </form>
 

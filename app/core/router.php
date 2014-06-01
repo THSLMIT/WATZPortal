@@ -207,7 +207,7 @@ class Router
                 $segments = explode('@',$last);
 
                 //instanitate controller
-                $controller = new $segments[0]('No routes found.');
+                $controller = new $segments[0]('No routes found: ');
 
                 //call method
                 $controller->$segments[1]();
