@@ -25,6 +25,8 @@ class Account extends Controller{
 				if(Password::verify($password, $acct->getHash($email)) == false) $error = true;
 				else {
 					// Set Sessions and Redirect to Port
+
+					Url::redirect('');
 				} 
 			} else $error = true;
 
