@@ -13,7 +13,7 @@ TODO:
         <li>
             <div class="user-info-wrapper">	
                 <!-- Profile Image -->
-                <div class="user-info-profile-image"><img src="<?php echo url::get_template_path();?>img/profile-1.jpg" alt="" width="65" height="65" /></div>
+                <div class="user-info-profile-image"><img src="<?php echo url::get_template_path();?>img/profile.jpg" alt="" width="65" height="65" /></div>
 
                 <!-- Profile Information + Welcome! -->
                 <div class="user-info">

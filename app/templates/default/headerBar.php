@@ -6,7 +6,8 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html"><img class="brand-logo" src="<?php echo url::get_template_path();?>img/logo.png" alt="" />WATZ</a>
+        <a class="navbar-brand" href="http://www.thslmit.com/portal/"><img class="brand-logo" src="<?php echo url::get_template_path();?>img/logo.png" alt="" />WATZ</a>
+        <!-- TODO: Change the logo to an appropriate one... -->
     </div>
     
 </nav>
