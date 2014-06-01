@@ -12,6 +12,11 @@ class Portal extends Controller {
 
 	public function index($request = null) {
 		$this->view->render('dashboard/index', $data);
+
+		/* Database Test
+		$sysacct = $this->loadModel('sysAcct_model');
+		echo $sysacct->getUsers()[0]->email;
+		*/
 	}
 
 	public function login() {

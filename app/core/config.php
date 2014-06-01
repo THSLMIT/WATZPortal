@@ -11,10 +11,10 @@ define('DIR','http://thslmit.com/portal/');
 
 //database details ONLY NEEDED IF USING A DATABASE
 define('DB_TYPE','mysql');
-define('DB_HOST','sql5.freesqldatabase.com:3306');
-define('DB_NAME','sql542189');
-define('DB_USER','sql542189');
-define('DB_PASS','kP9!vY4*');
+define('DB_HOST','watzdb.thslmit.com');
+define('DB_NAME','watz');
+define('DB_USER','watz');
+define('DB_PASS','fuck@lzheimer5');
 define('PREFIX','watz_');
 
 //set prefix for sessions
