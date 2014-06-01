@@ -11,6 +11,7 @@ class Portal extends Controller {
 	}
 
 	public function index($request = null) {
+		$this->view->render('dashboard/index', $data);
 	}
 
 	public function login() {
