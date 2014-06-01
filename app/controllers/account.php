@@ -10,8 +10,25 @@ class Account extends Controller{
 	}
 
 	public function login() {
+
+		// Data Submission Check
 		if(isset($_POST['submit'])){
-			echo "SUBMIT!";
+
+			$acct = $this->loadModel("sysacct_model");
+
+			$error = false;
+
+			$email = $_POST['email'];
+			$password = $_POST['password'];
+
+			if ($email != "" || $password != "") {
+				if(Password::verify($password, $acct->getHash($email)) == false) $error = true;
+				else {
+					// Set Sessions and Redirect to Port
+				} 
+			} else $error = true;
+
+			if ($error) $data['error'] = "<div class='alert alert-warning'>Incorrect Credentials. Please try again.</div>";
 		}
 
 		$data['title'] = 'Sign In';

@@ -7,7 +7,7 @@ set_error_handler('logger::error_handler');
 date_default_timezone_set('Europe/London');
 
 //site address
-define('DIR','http://www.thslmit.com/portal/');
+define('DIR','http://www.thslmit.com/');
 
 //database details ONLY NEEDED IF USING A DATABASE
 define('DB_TYPE','mysql');

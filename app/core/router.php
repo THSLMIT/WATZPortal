@@ -45,7 +45,7 @@ class Router
     public static function dispatch()
     {
         $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-        $method = $_SERVER['REQUEST_METHOD'];  
+        $method = $_SERVER['REQUEST_METHOD']; 
 
         $searches = array_keys(static::$patterns);
         $replaces = array_values(static::$patterns);
@@ -207,7 +207,7 @@ class Router
                 $segments = explode('@',$last);
 
                 //instanitate controller
-                $controller = new $segments[0]('No routes found: ');
+                $controller = new $segments[0]('No routes found');
 
                 //call method
                 $controller->$segments[1]();

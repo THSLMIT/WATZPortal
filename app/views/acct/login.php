@@ -9,8 +9,10 @@
         </div>
         
         <div class="panel-body text-center">
-            <form id="login" role="form" action="http://www.thslmit.com/portal/login" method="post" />
-            <fieldset>
+            
+            <?php echo $data['error']; ?>
+
+            <form id="login" method="POST" action="" />
                 <div class="form-group">
                     <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus="" />
                 </div>
@@ -19,10 +21,7 @@
                     <input class="form-control" placeholder="Password" name="password" type="password" value="" />
                 </div>
                 
-                <!-- Change this to a button or input when using this as a form -->
-                <input class="btn btn-lg btn-primary btn-block" type="submit" value="Login" />
-<!--                <a href="" onclick="javascript: document.getElementById('login').submit()" name="submit" class="btn btn-lg btn-primary btn-block">Login</a>-->
-            </fieldset>
+                <input class="btn btn-lg btn-primary btn-block" name="submit" type="submit" value="Login" />
             </form>
 
             <br />

@@ -8,7 +8,7 @@
             <p>Create a new account to link with your Smartwatch and Docking Station Device. 
             This process will enable you to use our online services to gain access to real-time 
             tracking and analytics tools as well.<br /><br /></p>
-            <a href="http://www.thslmit.com/portal/createAcct" class="btn btn-lg btn-primary btn-block">Get Started</a>
+            <a href="http://www.thslmit.com/createAcct" class="btn btn-lg btn-primary btn-block">Get Started</a>
         </div>
     </div>
     </div>
