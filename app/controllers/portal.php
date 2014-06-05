@@ -11,6 +11,7 @@ class Portal extends Controller {
 	}
 
 	public function index($request = null) {
+
 		$this->view->render('dashboard/index', $data);
 
 		/* Database Test
@@ -18,6 +19,14 @@ class Portal extends Controller {
 		echo $sysacct->getUsers()[0]->email;
 		*/
 	}
+	
+	public function track(){
+		Session::set('uid', '64738201');
+		Session::set('sessionID', '72fkskal');
+		$this->view->render('dashboard/track', $data);
+	}
+	
+	
 
 	public function login() {
 		$data['title'] = 'Sign In';

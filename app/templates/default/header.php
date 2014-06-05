@@ -2,12 +2,18 @@
 <html>
 <head>
 	<title><?php echo SITETITLE; //SITETITLE defined in index.php?></title>
-    
+
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no" />
-	
+
 	<meta name="description" content="" />
 	<link rel="author" href="" />
 
+
+	<!--Morris stuff -->
+	<link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.4.3.min.css">
+ 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+ 	<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+	 <script src="http://cdn.oesmith.co.uk/morris-0.4.3.min.js"></script>
     <!-- Core CSS - Include with every page -->
     <link href="<?php echo url::get_template_path();?>css/bootstrap.css" rel="stylesheet" />
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" />
@@ -28,6 +34,7 @@
     <!-- Page-Level Plugin Scripts - Dashboard -->
     <script src="<?php echo url::get_template_path();?>js/plugins/morris/raphael-2.1.0.min.js"></script>
     <script src="<?php echo url::get_template_path();?>js/plugins/morris/morris.js"></script>
+    <script src = "http://cdn.oesmith.co.uk/morris-0.4.3.min.js"></script>
 
     <!-- Mint Admin Scripts - Include with every page -->
     <script src="<?php echo url::get_template_path();?>js/mint-admin.js"></script>
@@ -39,5 +46,3 @@
 </head>
 
 <body>
-
-<div id="wrapper">

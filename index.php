@@ -5,11 +5,7 @@ require('app/core/autoloader.php');
 
 // Portal Routes
 Router::get('', 'portal@index');
-Router::get('track', 'portal@index');
-Router::get('saset', 'portal@index');
-Router::get('devset', 'portal@index');
-Router::get('anset', 'portal@index');
-
+Router::get('track', 'portal@track');
 // Account Routes
 Router::get('login', 'account@login');
 Router::post('login', 'account@login');
@@ -21,9 +17,9 @@ Router::post('createAcct', 'account@createForm');
 
 Router:: get('acctSucc', 'account@createAcctSuccess');
 
-// Test Functions
-Router::get('test'. function() {
-});
+// 
+Router::get('getCoordinates', 'request@getCoordinates');
+
 
 //if no route found
 Router::error('error@index');

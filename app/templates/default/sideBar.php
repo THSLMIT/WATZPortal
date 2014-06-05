@@ -24,9 +24,9 @@ TODO:
             </div>
         </li>
         
-        <li><a href=""><i class="fa fa-dashboard fa-fw fa-3x"></i> Dashboard</a></li>
+        <li><a href="/"><i class="fa fa-dashboard fa-fw fa-3x"></i> Dashboard</a></li>
         
-        <li><a href=""><i class="fa fa-map-marker fa-fw fa-3x"></i> Track</a></li>
+        <li><a href="track"><i class="fa fa-map-marker fa-fw fa-3x"></i> Track</a></li>
         
         <li>
             <a href="#"><i class="fa fa-bar-chart-o fa-fw fa-3x"></i> Analytics<span class="fa arrow"></span></a>
