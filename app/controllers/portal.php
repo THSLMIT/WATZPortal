@@ -35,5 +35,15 @@ class Portal extends Controller {
 		$this->view->render('acct/login',$data);
 		$this->view->rendertemplate('soloFooter',$data);
 	}
+	
+	public function acctSettings(){
+		if(isset($_POST['firstName'])){
+			$firstName;
+		}
+		
+		$this->view->render('dashboard/acctSettings');
+		
+	}
+	
 
 }

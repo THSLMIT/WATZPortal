@@ -20,6 +20,8 @@ Router:: get('acctSucc', 'account@createAcctSuccess');
 // 
 Router::get('getCoordinates', 'request@getCoordinates');
 
+Router::get('accountSettings', 'portal@acctSettings');
+Router::post('accountSettings', 'portal@acctSettings');
 
 //if no route found
 Router::error('error@index');

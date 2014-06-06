@@ -1,4 +1,4 @@
-<div id="page-wrapper">
+<div id="page-wrapper" style = "padding: 20px">
 	<div class="row">
 		<div class="col-lg-12">
 	        <h3 class="page-header text-asbestos">Dashboard</h3>
@@ -19,24 +19,18 @@
     	</div></div>
     </div>
 
-	-->
+	
 
 </div>
 
-<!--
-<div id="page-wrapper" style = "padding: 10px">
-	<div class = "alert alert-info" style = "padding: 10px">
+
+-->
+	<div class = "alert alert-info" >
 		Tracking session currently active. Click <a href = "track">here</a> to see live data.
 		<button type = "button" class = "close" data-dismiss = "alert" aria-hidden = "true">&times;</button>
 	</div>
-</div>
 
-<div class="row">
 
-	<div class="col-lg-12">
-		<h3 class="page-header">Dashboard</h3>
-	</div>
-</div>
 
 <br/>
 <div class = "row">
@@ -49,7 +43,7 @@
 		<div class = "panel-body">
 
 			<div class = "col-lg-12">
-				<div id = "incidentChart" style = "height: 300px;">
+				<div id = "incidentChart" style = "height: 300px; padding: 20px">
 				</div>
 			</div>
 			</div>
@@ -67,12 +61,100 @@
 			</div>
 			<div class = "panel-footer">
 				<span class = "panel-eyecandy-title">
-					Visits this Month
+					Site Visits This Month
 				</span>
 			</div>
 
 		</div>
 	</div>
+		<div class = "col-md-4">
+		<div class = "panel  panel-primary text-center panel-eycandy">
+			<div class = "panel-body theme-color">
+				<i class = "fa fa-users fa-3x"></i>
+				<h3>15</h3>
+			</div>
+			<div class = "panel-footer">
+				<span class = "panel-eyecandy-title">
+					Check-Ins With Patient This Month
+				</span>
+			</div>
+
+		</div>
+	</div>
+		<div class = "col-md-4">
+		<div class = "panel  panel-primary text-center panel-eycandy">
+			<div class = "panel-body asbestos">
+				<i class = "fa fa-location-arrow fa-3x"></i>
+				<h3>Market</h3> <!-- Get from db -->
+			</div>
+			<div class = "panel-footer">
+				<span class = "panel-eyecandy-title">
+					Current Patient Destination
+				</span>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<div class = "row">
+	<div class = "col-lg-12">
+		<div class = "panel panel-default">
+			<div class = "panel-heading">
+				<i class = "fa fa-clock-o fa-fw"></i> Timeline
+				
+			</div>
+			
+			<div class = "panel-body">
+				<ul class = "timeline">
+					<li>
+						<div class = "timeline-panel">
+							<div class = "timeline-heading">
+								<h4 class = "timeline-heading">Patient Left House</h4>
+								<p>
+									<small class = "muted">5:20 AM</small>
+								</p>
+							</div>
+							<div class = "timeline-body">
+								Patient walked to  <a href = "accountSettings#locations">Park.</a>  <!-- Walked and park would be changeable -->
+							</div>
+						</div>
+					</li>
+					<li class = "timeline-inverted">
+						
+						<div class = "timeline-panel">
+							
+							<div class = "timeline-heading">
+								<h4 class = "timeline-heading">Patient Arrived at House</h4>
+								<p>
+									<small class = "muted">7:00 AM</small>
+								</p>
+							</div>
+							<div class = "timeline-body">
+								Patient came back from <a href = "accountSettings#locations">Park.</a>  <!-- Park would be changeable -->
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class = "timeline-panel">
+							<div class = "timeline-heading">
+								<h4 class = "timeline-heading">Patient Left House</h4>
+								<p>
+									<small class = "muted">3:00</small>
+								</p>
+							</div>
+							<div class = "timeline-body">
+								Patient drove to  <a href = "accountSettings#locations">Market.</a>  <!-- Drove and Market would be changeable -->
+							</div>
+						</div>
+					</li>										
+				</ul>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
 </div>
 
 
@@ -86,11 +168,11 @@
   // Chart data records -- each entry in this array corresponds to a point on
   // the chart.
   data: [
-   	{ year: '2013', value: 20 },
-    { year: '2014', value: 10 },
-    { year: '2015', value: 5 },
-    { year: '2016', value: 5 },
-    { year: '2017', value: 20 }
+   	{ year: '2011', value: 20},
+    { year: '2012', value: 17 },
+    { year: '2013', value: 12 },
+    { year: '2014', value: 4 },
+    { year: '2015', value: 1 }
   ],
   // The name of the data record attribute that contains x-values.
   xkey: 'year',
@@ -100,6 +182,17 @@
   // chart.
   labels: ['Incidents']
 });
+</script>
+
+<script>
+Morris.Donut({
+  element: 'frequentPlaces',
+  data: [
+    {label: "Park", value: '70'},
+    {label: "In-Store Sales", value: '20'},
+    {label: "Mail-Order Sales", value: '10'}
+  ]
+});
 
 </script>
--->
+	

@@ -135,10 +135,15 @@ class Account extends Controller{
 		$this->view->rendertemplate('soloHeader',$data);
 		$this->view->render('acct/createAccount',$data);
 	}
+	
 
 	public function createAcctSuccess() {
 		$this->view->rendertemplate('soloHeader', $data);
 		$this->view->render('acct/createAcctSuccess', $data);
 		$this->view->rendertemplate('soloFooter', $data);
 	}
+
+
+
 }
+

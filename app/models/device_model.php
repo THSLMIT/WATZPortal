@@ -29,12 +29,12 @@ class Device_model extends Model {
 			'dsid' => $deviceID
 		);
 
-		$this->_db->insert('acct_devLink', $data);
+		$this->_db->insert('AcctDeviceLink', $data);
 	}
 
 	public function unlinkAcctDev($uid) {
 		$data = array('uid' => $uid);
-		$this->_db->delete('acct_devLink', $data);
+		$this->_db->delete('AcctDeviceLink', $data);
 	}
 
 }

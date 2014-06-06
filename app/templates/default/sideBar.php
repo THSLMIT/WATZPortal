@@ -39,7 +39,7 @@ TODO:
         <li>
             <a href="#"><i class="fa fa-gear fa-fw fa-3x"></i> Settings<span class="fa arrow"></span></a>
             <ul class="nav nav-second-level">
-                <li><a href="flot.html">System Account</a></li>
+                <li><a href="accountSettings">System Account</a></li>
                 <li><a href="morris.html">Device</a></li>
                 <li><a href="morris.html">Alert and Notification</a></li>
             </ul>
