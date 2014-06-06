@@ -6,7 +6,7 @@
 	</div>
 
 	<!--
-	Setup Information - Display only under the following conditions:
+	1) Setup Information - Display only under the following conditions:
 	- Smartwatch has not been setup and linked with the user account.
 	- Patient is not linked with the account data.
 
@@ -19,17 +19,16 @@
     	</div></div>
     </div>
 
-	
 
+	2) If a tracking session is active, show a static map - without the path markings of the patient.
+	- Just show a marker with where the patient is located.
+	- How long he has traveled
+	- How far he has walked out of the house
+
+	3) If a tracking session is not active, show just a generic welcome with quick access links to some of the most commonly used features.
+	- Something like quick links essentially so that users can quickly go to where they need to.
 </div>
-
-
--->
-	<div class = "alert alert-info" >
-		Tracking session currently active. Click <a href = "track">here</a> to see live data.
-		<button type = "button" class = "close" data-dismiss = "alert" aria-hidden = "true">&times;</button>
-	</div>
-
+	-->
 
 
 <br/>
